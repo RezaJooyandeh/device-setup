@@ -7,7 +7,10 @@
 ```powershell
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/PowerShell/Microsoft.PowerShell_profile.ps1" -Destination ([Environment]::GetFolderPath("MyDocuments") + "\PowerShell")
 ```
-* Start/Restart PowerShell Core and run `Complete-FirstTime-Setup` command 
+* Start/Restart PowerShell 7 and run `Complete-FirstTime-Setup` command 
+* Run `Windows Terminal` and have fun!
+
+![image](https://user-images.githubusercontent.com/6832601/123356371-785b9300-d51c-11eb-8f84-aace30831c51.png)
 
 # Other tools to install
   * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
