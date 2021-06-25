@@ -11,7 +11,7 @@ Set-PoshPrompt -Theme morphism # Set custom theme for OhMyPosh. Run First-Time-S
 
 function gfa { git fetch --all -p }
 
-function gpa { git checkout master; git pull --prune; git branch -D $(git branch --merged).trim(); }
+function gpp { git pull --prune }
 
 function Complete-FirstTime-Setup {
 	function Install-PoshGit {
