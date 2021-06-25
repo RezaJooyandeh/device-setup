@@ -1,7 +1,8 @@
 # Prerequisite installations
   * [PowerShell Core](https://aka.ms/powershell-release?tag=stable)
   * [Install Caskaydia Cove Nerd Font](https://www.nerdfonts.com/font-downloads)
-  
+  * [Windows Terminal](https://aka.ms/terminal)
+ 
 # Steps after installations
 * Run the command below 👇🏼 or manually download [PowerShell Core Profile](PowerShell/Microsoft.PowerShell_profile.ps1) into *Documents\PowerShell* folder.
 ```powershell
@@ -15,6 +16,5 @@ Start-BitsTransfer -Source "https://raw.githubusercontent.com/RezaJooyandeh/devi
 # Other tools to install
   * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
   * [Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
-  * [Windows Terminal](https://aka.ms/terminal)
   * [7-zip](https://www.7-zip.org/)
   * TODO: Update the instructions once [winget](https://github.com/microsoft/winget-cli) is generally available.
