@@ -41,9 +41,6 @@ function Complete-FirstTime-Setup {
 		$windowsTerminalSettingsFolder = [Environment]::GetEnvironmentVariable("LOCALAPPDATA") + "\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
 		Start-BitsTransfer -Source $terminalSettingsAddress -Destination $windowsTerminalSettingsFolder
 
-		Write-Host "**Manual Action Required**: Download and install Caskaydia Cove NF for Windows Terminal Theme"
-		Start-Process "https://www.nerdfonts.com/"
-
 		Write-Host "Installing Terminal Icons PowerShell module, making some commands like ls, use fancy icons..."
 		Install-Module -Name Terminal-Icons -Repository PSGallery
 	}

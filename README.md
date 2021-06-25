@@ -1,5 +1,6 @@
 # Prerequisite installations
   * [PowerShell Core](https://aka.ms/powershell-release?tag=stable)
+  * [Install Caskaydia Cove Nerd Font](https://www.nerdfonts.com/font-downloads)
   
 # Steps after installations
 * Run the command below 👇🏼 or manually download [PowerShell Core Profile](PowerShell/Microsoft.PowerShell_profile.ps1) into *Documents\PowerShell* folder.
