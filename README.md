@@ -2,8 +2,11 @@
   * [PowerShell Core](https://aka.ms/powershell-release?tag=stable)
   
 # Steps after installations
-* Download [PowerShell Core Profile](PowerShell/Microsoft.PowerShell_profile.ps1) into the *Documents\PowerShell* folder 
-* Start PowerShell Core and run `Complete-FirstTime-Setup` command 
+* Run the command below 👇🏼 or manually download [PowerShell Core Profile](PowerShell/Microsoft.PowerShell_profile.ps1) into *Documents\PowerShell* folder.
+```powershell
+Start-BitsTransfer -Source "https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/PowerShell/Microsoft.PowerShell_profile.ps1" -Destination ([Environment]::GetFolderPath("MyDocuments") + "\PowerShell")
+```
+* Start/Restart PowerShell Core and run `Complete-FirstTime-Setup` command 
 
 # Other tools to install
   * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
