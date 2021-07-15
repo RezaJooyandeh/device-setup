@@ -86,6 +86,8 @@
     // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
         { "command": "copy", "keys": ["ctrl+c"] },
-        { "command": "paste", "keys": ["ctrl+v"] }
+        { "command": "paste", "keys": ["ctrl+v"] },
+        { "command": "newTab", "keys": ["ctrl+t"] },
+        { "command": "closeTab", "keys": ["ctrl+w"] }        
     ]
 }
