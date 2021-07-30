@@ -4,7 +4,7 @@
   * [Windows Terminal](https://aka.ms/terminal)
  
 # Steps after installations
-* Run the command below 👇🏼 or manually download [PowerShell Core Profile](PowerShell/Microsoft.PowerShell_profile.ps1) into *Documents\PowerShell* folder.
+* Download [PowerShell Core Profile](PowerShell/Microsoft.PowerShell_profile.ps1) into *Documents\PowerShell* folder or run the command below 👇🏼 to download.
 ```powershell
 Start-BitsTransfer -Source "https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/PowerShell/Microsoft.PowerShell_profile.ps1" -Destination ([Environment]::GetFolderPath("MyDocuments") + "\PowerShell")
 ```
