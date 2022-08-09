@@ -7,7 +7,9 @@ Import-Module posh-git # Helps with auto complete in PowerShell. Run First-Time-
 
 Import-Module -Name Terminal-Icons # Pretty icons for some commands like ls, https://github.com/devblackops/Terminal-Icons
 
-Set-PoshPrompt -Theme morphism # Set custom theme for OhMyPosh. Run First-Time-Setup if the module is not installed or the theme is not downloaded
+# Run First-Time-Setup if the module is not installed or the theme is not downloaded
+#Set-PoshPrompt -Theme morphism # Set custom theme for OhMyPosh. 
+oh-my-posh init pwsh --config ~/.morphism.omp.json | Invoke-Expression
 
 function gfa { git fetch --all -p }
 
@@ -23,11 +25,8 @@ function Complete-FirstTime-Setup {
 		function Set-OhMyPosh-Theme {
 			Write-Host "Downloading Morphism theme for Oh My Posh..."
 			$themeAddress = "https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/PowerShell/oh-my-posh-themes/morphism.omp.json"
-			$ohMyPoshThemeFolder = [Environment]::GetFolderPath("MyDocuments") + "\PowerShell\Modules\oh-my-posh\7.85.2\themes"
-			Start-BitsTransfer -Source $themeAddress -Destination $ohMyPoshThemeFolder
+			Start-BitsTransfer -Source $themeAddress -Destination $env:POSH_THEMES_PATH
 		}
-
-		#https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/Microsoft.PowerShell_profile.ps1
 
 		Write-Host "Installing Oh My Posh PowerShell module, allowing customization of the command layouts..."
 		Install-Module oh-my-posh -Scope CurrentUser
@@ -45,7 +44,8 @@ function Complete-FirstTime-Setup {
 		Install-Module -Name Terminal-Icons -Repository PSGallery
 	}
 
+	winget install --id Git.Git -e --source winget
 	Install-PoshGit
-	Install-OhMyPosh
+	winget install JanDeDobbeleer.OhMyPosh -s winget
 	Update-WindowsTerminal-Settings
 }
