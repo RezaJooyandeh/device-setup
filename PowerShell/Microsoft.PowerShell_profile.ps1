@@ -27,7 +27,7 @@ function Complete-FirstTime-Setup {
 			Start-BitsTransfer -Source $themeAddress -Destination $ohMyPoshThemeFolder
 		}
 
-		https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/Microsoft.PowerShell_profile.ps1
+		#https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/Microsoft.PowerShell_profile.ps1
 
 		Write-Host "Installing Oh My Posh PowerShell module, allowing customization of the command layouts..."
 		Install-Module oh-my-posh -Scope CurrentUser
