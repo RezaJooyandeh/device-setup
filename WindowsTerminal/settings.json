@@ -22,7 +22,7 @@
             "guid": "{216ee5bb-e67d-4f04-921d-6a3b2f3249fa}",
             "hidden": false,
             "name": "PowerShell Frost",
-            "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+            "commandline": "pwsh.exe",
             "fontFace" : "CaskaydiaCove NF",
             "acrylicOpacity": 0.9,
             "colorScheme" : "Frost",
