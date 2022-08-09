@@ -23,7 +23,7 @@ function Complete-FirstTime-Setup {
 		function Set-OhMyPosh-Theme {
 			Write-Host "Downloading Morphism theme for Oh My Posh..."
 			$themeAddress = "https://raw.githubusercontent.com/RezaJooyandeh/device-setup/main/PowerShell/oh-my-posh-themes/morphism.omp.json"
-			$ohMyPoshThemeFolder = [Environment]::GetFolderPath("MyDocuments") + "\PowerShell\Modules\oh-my-posh\3.158.4\themes"
+			$ohMyPoshThemeFolder = [Environment]::GetFolderPath("MyDocuments") + "\PowerShell\Modules\oh-my-posh\7.85.2\themes"
 			Start-BitsTransfer -Source $themeAddress -Destination $ohMyPoshThemeFolder
 		}
 
